@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap");
+
 body {
   height: 100vh;
   background-color: red;
+  font-family: "Mulish", sans-serif;
 }
 
 .fa-reddit {
@@ -18,7 +21,18 @@ input.form-control:focus {
   margin: 20px auto;
   width: 900px;
 }
-
+#infoReddit {
+  background-image: url("./planets.jpg");
+  padding: 0px;
+}
+#infoReddit i {
+  color: red;
+}
+#infoReddit > div:nth-child(1) {
+  top: 70px;
+  left: 10px;
+  z-index: 99;
+}
 .slice {
   height: 50px;
 }
