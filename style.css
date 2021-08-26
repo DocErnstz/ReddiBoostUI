@@ -1,3 +1,8 @@
+body {
+  height: 100vh;
+  background-color: red;
+}
+
 .fa-reddit {
   color: red;
 }
@@ -8,4 +13,19 @@ input.form-control:focus {
   -webkit-box-shadow: none !important;
   border: 1px solid #ced4da;
   outline: none;
+}
+#Mainbar {
+  margin: 40px auto;
+  width: 900px;
+}
+
+@media (max-width: 600px) {
+  #brand {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .container-fluid {
+    flex-wrap: nowrap;
+  }
 }
