@@ -17,6 +17,14 @@ input.form-control:focus {
   border: 1px solid #ced4da;
   outline: none;
 }
+input[type="text"] {
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: 1px solid #ced4da;
+  outline: none;
+}
+
 #Mainbar {
   margin: 20px auto;
   width: 900px;
