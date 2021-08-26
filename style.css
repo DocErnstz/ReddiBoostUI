@@ -15,17 +15,37 @@ input.form-control:focus {
   outline: none;
 }
 #Mainbar {
-  margin: 40px auto;
+  margin: 20px auto;
   width: 900px;
 }
 
-@media (max-width: 600px) {
+.slice {
+  height: 50px;
+}
+.slicePost {
+  height: 350px;
+}
+
+@media (max-width: 604px) {
   #brand {
     display: none;
   }
 }
-@media (max-width: 500px) {
-  .container-fluid {
-    flex-wrap: nowrap;
+@media (max-width: 576px) {
+  .navbar > div {
+    padding: 0px;
+  }
+  #Mainbar {
+    width: 100vw;
+    margin: 0px;
+  }
+}
+@media (max-width: 768px) {
+  #infoReddit {
+    display: none;
+  }
+  #homePosts {
+    padding: 0px;
+    margin: 0 auto;
   }
 }
