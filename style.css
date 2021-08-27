@@ -44,7 +44,8 @@ input[type="text"] {
   font-size: 20px;
 }
 
-#ContentPost > div:nth-child(3) {
+#subImg{
+  background-image: url("./planets.jpg");
 }
 
 .sub {
