@@ -75,6 +75,7 @@ input[type="text"] {
     width: 100vw;
     margin: 0px;
   }
+  
 }
 @media (max-width: 768px) {
   #infoReddit {
@@ -84,4 +85,12 @@ input[type="text"] {
     padding: 0px;
     margin: 0 auto;
   }
+  #infoUser > div{
+    font-size: 11px;
+  }
+  #userIcon{
+    font-size: 20px;
+  }
 }
+
+

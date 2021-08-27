@@ -31,19 +31,7 @@
     <title>ReddiBost</title>
   </head>
   <body class="bg-secondary">
-      <div class="card" style="width: 100%;">
-  <div id="subImg" class="card-img-top" style="height: 200px"></div>
-  <div class="card-body d-flex flex-column align-items-center">
-    <div class="d-flex w-50 align-items-start">
-       <h5 class="card-title fw-bolder fs-3">Discuss Space education, planets, and new constellations</h5>
-    <a href="#" class="btn btn-primary rounded-pill px-4 ms-5">Join</a>
-    </div>
-   
-    <p class="card-text w-50">r/Planets</p>
-    
-  </div>
-</div>
-    <nav class="navbar shadow navbar-expand-lg navbar-light bg-light sticky-top">
+     <nav class="navbar shadow navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><i class="fab fa-reddit-alien fa-2x"></i></a>
@@ -64,7 +52,7 @@
               />
             </div>
           </form>
-          <div class="row ms-auto h-100">
+          <div class="row ms-auto my-auto h-100">
             <div
               class="
                 col col-2
@@ -74,9 +62,9 @@
                 mx-2
               "
             >
-              <i class="far fa-user fa-2x"></i>
+              <i id="userIcon" class="far fa-user fa-2x"></i>
             </div>
-            <div class="col">
+            <div class="col" id="infoUser">
               <div class="row fw-bold">Mercadoernesto</div>
               <div class="row fw-lighter">999 karma</div>
             </div>
@@ -84,6 +72,34 @@
         </div>
       </div>
     </nav>
+     
+     
+     <div id="SubInfo" class="bg-white">
+       <span id="subImg" class="w-100 d-block" style="height: 100px"></span>
+  <div class="d-flex flex-column mx-auto px-4" style="max-width: 800px;">
+    <div class="d-flex mb-2" style="z-index: 99; margin-top: -15px;">
+        <i class="fas fa-globe fa-4x"></i>
+        <div class="d-inline-flex" style="width: calc(100% - 80px); margin-top: 20px; padding-left: 10px;">
+          <div class="inline-block" style="width: calc(100% - 80px); ">
+            <h1 class="m-0 d-inline-block" style="flex: 1; font-size: 28px;">Discuss Aerospace education, news, events, use cases and resources.</h5>
+            <p class="m-0">r/Planets</p>
+          </div>
+          <a href="" class="btn btn-outline btn-primary rounded-pill" style="height: 40px; width: 80px">Join</a>
+        </div>
+       </div>
+       
+     
+    </div>
+    </div>
+  
+    
+     
+    </div>
+     </div>
+ 
+  
+</div>
+   
     <div class="container" id="Mainbar">
       <div class="row">
         <div id="homePosts" class="col-12 col-md-7">
@@ -175,7 +191,7 @@
          
         
 
-            <div class="card p-0 h-50" style="width: 18rem;">
+            <div class="card p-0 h-50" id="subInfo" style="width: 18rem;">
   <div class="bg-primary w-100" style="height: 50px;"></div>
   <div class="card-body">
     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis mollitia quidem vitae expedita consequuntur sequi minus hic deserunt dicta eius rem, incidunt recusandae odio, molestiae asperiores accusamus, aspernatur.</p>
