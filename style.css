@@ -29,17 +29,7 @@ input[type="text"] {
   margin: 20px auto;
   width: 900px;
 }
-#infoReddit {
-  background-image: url("./planets.jpg");
-  padding: 0px;
-  height: 50px;
-}
 
-#infoReddit > div:nth-child(1) {
-  top: 70px;
-  left: 10px;
-  z-index: 99;
-}
 #votes > i {
   font-size: 20px;
 }
