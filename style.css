@@ -58,9 +58,7 @@ input[type="text"] {
 .slice {
   height: 50px;
 }
-.slicePost {
-  height: 350px;
-}
+
 
 @media (max-width: 604px) {
   #brand {
