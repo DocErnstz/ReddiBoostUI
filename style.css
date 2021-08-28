@@ -44,6 +44,9 @@ input[type="text"] {
    transform: rotateY(360deg);
 }
 
+#imgForm{
+  background-image: url("./planets.jpg");
+}
 .sub {
   background-image: url("./planets.jpg");
   width: 20px;
@@ -78,9 +81,7 @@ input[type="text"] {
   align-items: center;
 
 }
-#lsButton > i{
-  
-}
+
 @media (max-width: 768px) {
   #infoReddit {
     display: none;
