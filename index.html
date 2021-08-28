@@ -10,6 +10,8 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -23,6 +25,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
       rel="stylesheet"
@@ -31,6 +37,8 @@
     <title>ReddiBost</title>
   </head>
   <body class="bg-secondary">
+   
+
     <nav class="navbar shadow navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
@@ -52,19 +60,22 @@
               />
             </div>
           </form>
-          <div class="row ms-auto h-100">
+          <div class="row ms-auto my-auto h-100">
             <div
               class="
                 col col-2
                 d-flex
                 justify-content-center
                 align-items-center
-                mx-2
+                mx-3
               "
             >
-              <i class="far fa-user fa-2x"></i>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+   <i id="userIcon" class="far fa-user fa-2x"></i>
+  </a>
+              
             </div>
-            <div class="col">
+            <div class="col" id="infoUser">
               <div class="row fw-bold">Mercadoernesto</div>
               <div class="row fw-lighter">999 karma</div>
             </div>
@@ -72,6 +83,29 @@
         </div>
       </div>
     </nav>
+    <div class="collapse" style="position: fixed; right: 0; width: 220px;" id="collapseExample">
+  <div class="card card-body">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">SignUp</button>
+    <button class="btn border-primary mt-2">Login</button>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="container" id="Mainbar">
       <div class="row">
         <div id="homePosts" class="col-12 col-md-7">
@@ -162,17 +196,17 @@
           </div>
          
         
-         <div id="infoReddit" class="col-12 shadow col-md-4 mx-auto bg-white rounded">
+         <div id="infoReddit" class="col-12 h-50 shadow col-md-4 mx-auto bg-white rounded">
         
             
-           <div class="mt-5 bg-white">
+           <div class="bg-white" style="height: 250px;">
               
-               <div class="p-5 container d-flex flex-column">
+               <div class="h-100 p-3 container d-flex flex-column justify-content-between">
                  <p>
                    Your personal Reddit frontpage. Come here to check in with your favorite communities.
                  </p>
                  <div class="btn btn-outline bg-primary text-white">Create Post</div>
-                 <div class="btn btn-outline border-primary bg-white text-primary mt-2 ">Create Post</div>
+                 <div class="btn btn-outline border-primary bg-white text-primary mt-2 ">Create Community</div>
                  </div>
             
              

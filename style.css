@@ -71,6 +71,16 @@ input[type="text"] {
   }
   
 }
+#lsButton{
+  font-size: 10px; 
+  width: 40px;
+  display: flex;
+  align-items: center;
+
+}
+#lsButton > i{
+  
+}
 @media (max-width: 768px) {
   #infoReddit {
     display: none;
@@ -84,6 +94,18 @@ input[type="text"] {
   }
   #userIcon{
     font-size: 20px;
+  }
+  #lsButton{
+    width: 10px;
+    padding: 0;
+    
+  }
+  #lsButton > i{
+    font-size: 10px;
+   
+  }
+  .navbar-brand{
+    font-size: 10px;
   }
 }
 
